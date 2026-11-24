@@ -1,0 +1,167 @@
+* {
+  margin: 10px auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --violet: #733fc8; /* lhs(263, 55%, 52%) approx. */
+  --violet-light: #a775f2;
+  --slate: #49556d; /* hsl(217, 19%, 35%) approx. */
+  --navy: #191f2d; /* hsl(219, 29%, 14%) approx. */
+  --white: #ffffff;
+  --page-bg: #f5f5f5;
+  --text-slate: #4e5460;
+  --text-gray: #7c7d82;
+}
+
+body {
+  font-family: "balrlow";
+  background-color: #f5f5f5;
+
+  /* padding: 24px;
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.8;
+  margin: 0; */
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  max-width: 1200px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+}
+
+.left-cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, 0.1fr);
+  gap: 1px;
+}
+
+.right-cards {
+  margin-right: 102px;
+}
+
+.top-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 18em);
+  gap: 24px;
+}
+
+.bottom-cards {
+  /* margin-bottom: 24px; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+/* .dan, .jon, .pat, .jean, .kira {
+    display: grid;
+    gap:auto;
+    padding: auto;
+    margin: auto;
+    border-radius: 8px;
+} */
+
+.avator-container {
+  padding: 0;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  align-items: center;
+  gap: 16px;
+}
+
+.ava {
+  display: grid;
+  grid-template-columns: 0.5fr 2.5fr;
+  grid-template-rows: repeat(1, 1fr);
+  justify-content: start;
+}
+
+.name {
+  font-weight: 500;
+  font-size: 13px;
+}
+.label {
+  font-size: 11px;
+  opacity: 0.6;
+  font-weight: 500;
+}
+.heading {
+  font-size: 20px;
+  /* line-height: 24px; */
+  font-weight: 600;
+}
+
+.quote-body {
+  font-size: 13px;
+  /* line-height: 18px; */
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.Dan {
+  background-color: hsl(263, 55%, 52%);
+  color: var(--white);
+  height: 288px;
+  width: 540px;
+  padding: 32px;
+  border-radius: 8px;
+}
+
+.avator {
+  width: 32px;
+  height: 32px;
+  border-radius: 25px;
+}
+.jon {
+  background-color: var(--slate);
+  height: 288px;
+  width: 255px;
+  padding: 16px;
+  color: white;
+  border-radius: 8px;
+}
+
+.pat {
+  background-color: var(--navy);
+  height: 269px;
+  width: 540px;
+  padding: 14px;
+  color: var(--white);
+  border-radius: 8px;
+}
+.jean {
+  background-color: var(--white);
+  height: 269px;
+  width: 255px;
+  padding: 16px;
+  color: var(--black);
+  border-radius: 8px;
+}
+
+.kira {
+  background-color: var(--white);
+  height: 582px;
+  width: 255px;
+  padding: 32px;
+  margin-top: 18px;
+  color: var(--black);
+  border-radius: 8px;
+}
+
+@media (min-width: 440px) {
+  .cards-container {
+    grid-template-columns: repeat(1, 1fr 1fr);
+    /* grid-template-rows: repeat(5, 1fr); */
+  }
+}
