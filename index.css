@@ -165,3 +165,18 @@ body {
     /* grid-template-rows: repeat(5, 1fr); */
   }
 }
+
+ @media (min-width: 1024px) {
+    .container{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "daniel daniel john kira"
+        "jean pat pat kira";
+
+    }
+     .dan{grid-area: daniel;}
+     .jon{grid-area: john;} 
+     .pat{grid-area: pat;}
+     .jean{grid-area: jean;}
+        .kira{grid-area: kira;}
+
+   }  
